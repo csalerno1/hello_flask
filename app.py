@@ -5,62 +5,59 @@ from datetime import datetime
 from flask import render_template
 app.static_folder = 'static'
 
-@app.route("/")
-def home():
-    return "Hello, Flask!"
 
 @app.route("/EggBites")
-def hello_there(name=None):
+def EggBites():
         return render_template(
         "EggBites2.html",
     )
 
 @app.route("/ChickenCacciatore")
-def hello_there(name=None):
+def ChickenCacciatore():
         return render_template(
         "ChickenCacciatore2.html",
     )
 
 @app.route("/CreamyChickenCasserole")
-def hello_there(name=None):
+def CreamyChickenCasserole():
         return render_template(
         "CreamyChickenCasserole2.html",
     )
 
 
 @app.route("/About")
-def hello_there(name=None):
+def About():
         return render_template(
         "about.html",
     )
 
 
 @app.route("/Contact")
-def hello_there(name=None):
+def Contact():
         return render_template(
         "contact.html"
     )
 
 @app.route("/DevilsFoodCakeCookies")
-def hello_there(name=None):
+def DevilsFoodCakeCookies():
         return render_template(
         "DevilsFoodCakeCookies2.html"
     )
 
 @app.route("/GuinnessBeefStew")
-def hello_there(name=None):
+def GuinnessBeefStew():
         return render_template(
         "GuinnessBeefStew2.html"
     )
 
-@app.route("/Index")
-def hello_there(name=None):
+@app.route("/")
+def Index(name=None):
         return render_template(
         "index.html"
     )
 
-@app.route("/Index/<name>")
-def hello_there(name=None):
+@app.route("/<name>")
+def IndexName(name=None):
         return render_template(
         "index.html",
         name=name,
@@ -68,37 +65,37 @@ def hello_there(name=None):
     )
 
 @app.route("/ProjectDetails")
-def hello_there(name=None):
+def ProjectDetails():
         return render_template(
         "project-details.html"
     )
 
 @app.route("/Project")
-def hello_there(name=None):
+def Project():
         return render_template(
         "project.html"
     )
 
 @app.route("/RecipesSidebar")
-def hello_there(name=None):
+def RecipesSidebar():
         return render_template(
         "recipes-sidebar.html"
     )
 
 @app.route("/RecipesSidebar2")
-def hello_there(name=None):
+def RecipesSidebar2():
         return render_template(
         "recipes-sidebar2.html"
     )
 
 @app.route("/UnstuffedCabbage")
-def hello_there(name=None):
+def UnstuffedCabbage():
         return render_template(
         "UnstuffedCabbage2.html"
     )
 
 @app.route("/ZucchiniBread")
-def hello_there(name=None):
+def ZucchiniBread():
         return render_template(
-        "ZucchiniBread2.html"
+        "ZucchiniBread.html"
     )

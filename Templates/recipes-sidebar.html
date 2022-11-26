@@ -8,74 +8,72 @@
 -->
 
 <html lang="zxx">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
-  <meta name="author" content="themefisher.com">
-
-  <title>Recipe List - ISM 6225
-  </title>
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
-
-  <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Icon Font Css -->
-  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
-  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
-  <link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
-    <link rel="stylesheet" href="plugins/modal-video/modal-video.css">
-    <link rel="stylesheet" href="plugins/animate-css/animate.css">
-  <!-- Slick Slider  CSS -->
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
+		<meta name="author" content="themefisher.com">
+	  
+		<title>Recipe List - USF ISM 6225</title>
+	  
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='bull.ico') }}" />
+			
+		<!-- bootstrap.min css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+		<!-- Icon Font Css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='themify-icons.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='all.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='magnific-popup.css') }}">
+		  <link rel="stylesheet" href="{{ url_for('static', filename='modal-video.css') }}">
+		  <link rel="stylesheet" href="{{ url_for('static', filename='animate.css') }}">
+		<!-- Slick Slider  CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='slick.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='slick-theme.css') }}">
+	  
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
 
 <body>
 
-
-	<nav class="navbar navbar-expand-lg  py-4 navigation header-padding nav-text-white" id="navbar">
-		<div class="container-fluid">
-		  <a class="navbar-brand" href="index.html">
-		  	<img src="images/usf-horns-logo.png" alt="" class="img-fluid hidden-logo">
-		  	<img src="images/usf-horns-logo.png" alt="" class="img-fluid mobile-logo">
-		  </a>
-
-		  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="fa fa-bars"></span>
-		  </button>
-	  
-		  <div class="collapse navbar-collapse text-center" id="navbarsExample09">
-			<ul class="navbar-nav m-auto">
-			  <li class="nav-item active">
-				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-			  </li>
-			   <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-			    <!--<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>-->
-			   
-			   <li class="nav-item"><a class="nav-link" href="project.html">Portfolio</a></li>
-			   <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
-				<ul class="dropdown-menu" aria-labelledby="dropdown05">
-					<li><a class="dropdown-item" href="CreamyChickenCasserole2.html">Creamy Chicken Casserole</a></li>
-
-					<li><a class="dropdown-item" href="GuinnessBeefStew2.html">Instant Pot Guinness Beef...</a></li>
-				
-					<li><a class="dropdown-item" href="EggBites2.html">Bacon and Italian Cheese...</a></li>
-
-					<li><a class="dropdown-item" href="recipes-sidebar.html">See all recipes</a></li>
+	<div class="bg-dark">
+		<nav class="navbar navbar-expand-lg  py-4 navigation header-padding nav-text-white" id="navbar">
+			<div class="container-fluid bg-dark">
+			  <a class="navbar-brand" href="{{ url_for('Index') }}">
+				  <img src="{{ url_for('static', filename='usf-horns-logo.png') }}" alt="" class="img-fluid mobile-logo">
+			  </a>
+	
+			  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span>
+			  </button>
+		  
+			  <div class="collapse navbar-collapse text-center" id="navbarsExample09">
+				<ul class="navbar-nav m-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="{{ url_for('Index') }}">Home <span class="sr-only">(current)</span></a>
+				  </li>
+				   <li class="nav-item"><a class="nav-link" href="{{ url_for('About') }}">About</a></li>
+					<!--<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>-->
+				   
+				   <li class="nav-item"><a class="nav-link" href="{{ url_for('Project') }}">Portfolio</a></li>
+				   <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="{{ url_for('RecipesSidebar') }}" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdown05">
+							<li><a class="dropdown-item" href="{{ url_for('CreamyChickenCasserole') }}">Creamy Chicken Casserole</a></li>
+	
+							<li><a class="dropdown-item" href="{{ url_for('GuinnessBeefStew') }}">Instant Pot Guinness Beef...</a></li>
+						
+							<li><a class="dropdown-item" href="{{ url_for('EggBites') }}">Bacon and Italian Cheese...</a></li>
+	
+							<li><a class="dropdown-item" href="{{ url_for('RecipesSidebar') }}">See all recipes</a></li>
+						</ul>
+					  </li>
+				   <li class="nav-item"><a class="nav-link" href="{{ url_for('Contact') }}">Contact</a></li>
 				</ul>
-			  </li>
-			   <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-			</ul>
-		  </div>
-		</div>
-	</nav>
+			  </div>
+			</div>
+		</nav>
 
 
 <section class="page-title bg-1">
@@ -87,14 +85,15 @@
           <h1 class="text-capitalize mb-5 text-lg">Recipes</h1>
 
           <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><a href="{{ url_for('Index') }}" class="text-white">Home</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="recipes-sidebar.html" class="text-white-50">Recipes</a></li>
+            <li class="list-inline-item"><a href="{{ url_for('RecipesSidebar') }}" class="text-white-50">Recipes</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+</div>
 </section>
 
 <section class="section blog-wrap">
@@ -105,11 +104,11 @@
 	<div class="col-lg-12 col-md-12 mb-5">
 		<div class="blog-item-content mt-4">
 			<div class="blog-thumb">
-				<img src="images/recipes/soup.jpg" alt="" class="img-fluid rounded">
+				<img src="{{url_for('static', filename='soup.jpg')}}" alt="" class="img-fluid rounded">
 			</div>
 
 			<div class="blog-item-content">
-				<h3 class="mt-3 mb-3"><a href="UnstuffedCabbage2.html">Instant Pot Unstuffed Cabbage Soup</a></h3>
+				<h3 class="mt-3 mb-3"><a href="{{ url_for('UnstuffedCabbage') }}">Instant Pot Unstuffed Cabbage Soup</a></h3>
 
 				<div class="blog-item-meta mb-3">
 					<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>253 Likes</span>
@@ -122,7 +121,7 @@
 					and is a quick and easy one-pot meal. Goes great
 					with dipping bread.</p>
 
-				<a href="UnstuffedCabbage2.html" class="btn btn-small btn-main ">Go To Recipe</a>
+				<a href="{{ url_for('UnstuffedCabbage') }}" class="btn btn-small btn-main ">Go To Recipe</a>
 			</div>
 		</div>
 	</div>
@@ -130,11 +129,11 @@
 	<div class="col-lg-12 col-md-12 mb-5">
 		<div class="blog-item-content mt-4">
 			<div class="blog-thumb">
-				<img src="images/recipes/chicken-cacciatore-photo.jpg" alt="" class="img-fluid rounded">
+				<img src="{{url_for('static', filename='chicken-cacciatore-photo.jpg')}}" alt="" class="img-fluid rounded">
 			</div>
 
 			<div class="blog-item-content">
-				<h3 class="mt-3 mb-3"><a href="ChickenCacciatore2.html">Chicken Cacciatore</a></h3>
+				<h3 class="mt-3 mb-3"><a href="{{ url_for('ChickenCacciatore') }}">Chicken Cacciatore</a></h3>
 
 				<div class="blog-item-meta mb-3">
 					<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>316 Likes</span>
@@ -146,7 +145,7 @@
 				<p class="mb-4">This recipe is great for a family meal or Sunday dinner! It is
 					<br>a classic dish that has an abundance of flavor!</p> <br>
 
-				<a href="ChickenCacciatore2.html" class="btn btn-small btn-main ">Go To Recipe</a>
+				<a href="{{ url_for('ChickenCacciatore') }}" class="btn btn-small btn-main ">Go To Recipe</a>
 			</div>
 		</div>
 	</div>
@@ -154,11 +153,11 @@
 	<div class="col-lg-12 col-md-12 mb-5">
 		<div class="blog-item-content mt-4">
 			<div class="blog-thumb">
-				<img src="images/recipes/familydinner.jpg" alt="" class="img-fluid rounded">
+				<img src="{{url_for('static', filename='familydinner.jpg')}}" alt="" class="img-fluid rounded">
 			</div>
 
 			<div class="blog-item-content">
-				<h3 class="mt-3 mb-3"><a href="CreamyChickenCasserole2.html">Creamy Chicken Casserole</a></h3>
+				<h3 class="mt-3 mb-3"><a href="{{ url_for('CreamyChickenCasserole') }}">Creamy Chicken Casserole</a></h3>
 
 				<div class="blog-item-meta mb-3">
 					<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>65 Likes</span>
@@ -170,7 +169,7 @@
 				<p class="mb-4">This recipe is a kid-friendly casserole that is also a great comfort meal. It is easy to prepare 
                     and will easily become your family favorite meal.</p>
 
-				<a href="CreamyChickenCasserole2.html" class="btn btn-small btn-main ">Go To Recipe</a>
+				<a href="{{ url_for('CreamyChickenCasserole') }}" class="btn btn-small btn-main ">Go To Recipe</a>
 			</div>
 		</div>
 	</div>
@@ -178,11 +177,11 @@
 	<div class="col-lg-12 col-md-12 mb-5">
 		<div class="blog-item-content mt-4">
 			<div class="blog-thumb">
-				<img src="images/recipes/cookies2.jpg" alt="" class="img-fluid rounded">
+				<img src="{{url_for('static', filename='cookies2.jpg')}}" alt="" class="img-fluid rounded">
 			</div>
 
 			<div class="blog-item-content">
-				<h3 class="mt-3 mb-3"><a href="DevilsFoodCakeCookies2.html">Devil's Food Cake Cookies</a></h3>
+				<h3 class="mt-3 mb-3"><a href="{{ url_for('DevilsFoodCakeCookies') }}">Devil's Food Cake Cookies</a></h3>
 
 				<div class="blog-item-meta mb-3">
 					<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>253 Likes</span>
@@ -195,7 +194,7 @@
                     being a cake mix. The recipe is easy to make your own, as items like peppermint (suggested in the recipe), 
                     walnuts or chocolate chips can be a great way to customize it.</p>
 
-				<a href="DevilsFoodCakeCookies2.html" class="btn btn-small btn-main ">Go To Recipe</a>
+				<a href="{{ url_for('DevilsFoodCakeCookies') }}" class="btn btn-small btn-main ">Go To Recipe</a>
 			</div>
 		</div>
 	</div>
@@ -208,34 +207,33 @@
 	
 
 
-	<div class="sidebar-widget latest-post mb-3">
-		<h5>Latest Recipes</h5>
-
-		<div class="media py-3">
-			
-			<div class="media-body">
-				<span class="text-sm text-muted">03 Mar 2021</span>
-				<h6 class="my-2"><a href="CreamyChickenCasserole2.html">Creamy Chicken Casserole</a></h6>
-			</div>
-		</div>
-
-		<div class="media py-3">
-			
-		   <div class="media-body">
-				   <span class="text-sm text-muted">27 Nov 2021</span>
-				<h6 class="my-2"><a href="GuinnessBeefStew2.html">Guinness Beef Stew</a></h6>
-			</div>
-		</div>
-
-		<div class="media py-3">
-			
-			<div class="media-body">
-				<span class="text-sm text-muted">12 Feb 2022</span>
-				<h6 class="my-2"><a href="EggBites2.html">Bacon and Italian Cheese Egg Bites</a></h6>
-			</div>
-		</div>
+			<div class="sidebar-widget latest-post mb-3">
+				<h5>Latest Recipes</h5>
 		
-	</div>
+				<div class="media py-3">
+					
+					<div class="media-body">
+						<span class="text-sm text-muted">03 Mar 2021</span>
+						<h6 class="my-2"><a href="{{ url_for('ZucchiniBread') }}">Zucchini Bread</a></h6>
+					</div>
+				</div>
+		
+				<div class="media py-3">
+					
+				   <div class="media-body">
+						   <span class="text-sm text-muted">27 Nov 2021</span>
+						<h6 class="my-2"><a href="{{ url_for('CreamyChickenCasserole') }}">Creamy Chicken Cassrole</a></h6>
+					</div>
+				</div>
+		
+				<div class="media py-3">
+					
+					<div class="media-body">
+						<span class="text-sm text-muted">12 Feb 2022</span>
+						<h6 class="my-2"><a href="{{ url_for('EggBites') }}">Egg Bites</a></h6>
+					</div>
+				</div>
+			</div>
 
 	<div class="sidebar-widget category mb-3">
 		<h5 class="mb-4">What's New?</h5>
@@ -260,7 +258,7 @@
         <nav class="pagination py-2 d-inline-block">
           <div class="nav-links">
             <span aria-current="page" class="page-numbers current">1</span>
-            <a class="page-numbers" href="recipes-sidebar2.html">2</a>
+            <a class="page-numbers" href="{{ url_for('RecipesSidebar2') }}">2</a>
             
             
           </div>
@@ -287,11 +285,11 @@
 					<h4 class="text-capitalize mb-4">Company</h4>
 
 					<ul class="list-unstyled footer-menu lh-35">
-            <li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="project.html">Portfolio</a></li>
-            <li><a href="recipes-sidebar.html">Recipes</a></li>
-						<li><a href="contact.html">Contact</a></li>
+            <li><a href="{{ url_for('Index') }}">Home</a></li>
+						<li><a href="{{ url_for('About') }}">About</a></li>
+						<li><a href="{{ url_for('Project') }}">Portfolio</a></li>
+            <li><a href="{{ url_for('RecipesSidebar') }}">Recipes</a></li>
+						<li><a href="{{ url_for('Contact') }}">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -336,30 +334,30 @@
    
 
     <!-- 
-    Essential Scripts
+    Essential Scripts - not ours
     =====================================-->
 
     
     <!-- Main jQuery -->
-    <script src="plugins/jquery/jquery.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="{{url_for('static', filename='jquery.js')}}"></script>
+    <script src="{{url_for('static', filename='contact.js')}}"></script>
     <!-- Bootstrap 4.3.2 -->
-    <script src="plugins/bootstrap/js/popper.js"></script>
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{url_for('static', filename='popper.js')}}"></script>
+    <script src="{{url_for('static', filename='bootstrap.min.js')}}"></script>
    <!--  Magnific Popup-->
-    <script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="{{url_for('static', filename='jquery.magnific-popup.min.js')}}"></script>
     <!-- Slick Slider -->
-    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="{{url_for('static', filename='slick.min.js')}}"></script>
     <!-- Counterup -->
-    <script src="plugins/counterup/jquery.waypoints.min.js"></script>
-    <script src="plugins/counterup/jquery.counterup.min.js"></script>
+    <script src="{{url_for('static', filename='jquery.waypoints.min.js')}}"></script>
+    <script src="{{url_for('static', filename='jquery.counterup.min.js')}}"></script>
 
-     <script src="plugins/modal-video/modal-video.js"></script>
+     <script src="{{url_for('static', filename='modal-video.js')}}"></script>
     <!-- Google Map -->
-    <script src="plugins/google-map/map.js"></script>
+    <script src="{{url_for('static', filename='map.js')}}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
     
-    <script src="js/script.js"></script>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
 
   </body>
   </html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="zxx">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
+		<meta name="author" content="themefisher.com">
+	  
+		<title>Zucchini Bread - USF ISM 6225e</title>
+	  
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='bull.ico') }}" />
+	  
+		<!-- bootstrap.min css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+		<!-- Icon Font Css -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='themify-icons.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='all.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='magnific-popup.css') }}">
+		  <link rel="stylesheet" href="{{ url_for('static', filename='modal-video.css') }}">
+		  <link rel="stylesheet" href="{{ url_for('static', filename='animate.css') }}">
+		<!-- Slick Slider  CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='slick.css') }}">
+		<link rel="stylesheet" href="{{ url_for('static', filename='slick-theme.css') }}">
+	  
+		<!-- Main Stylesheet -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	  
+		<script>
+			function comments()
+			{
+				alert("Thank you! Your comment has been submitted.");
+			}
+		</script>>
+	  </head>
+
+<body>
+
+<!-- HEADER OF ALL PAGES     -->
+<div class="bg-dark">
+	<nav class="navbar navbar-expand-lg  py-4 navigation header-padding nav-text-white" id="navbar">
+		<div class="container-fluid bg-dark">
+		  <a class="navbar-brand" href="{{ url_for('Index') }}">
+		  	<img src="{{ url_for('static', filename='usf-horns-logo.png') }}" alt="" class="img-fluid mobile-logo">
+		  </a>
+
+		  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="fa fa-bars"></span>
+		  </button>
+	  
+		  <div class="collapse navbar-collapse text-center" id="navbarsExample09">
+			<ul class="navbar-nav m-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="{{ url_for('Index') }}">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			   <li class="nav-item"><a class="nav-link" href="{{ url_for('About') }}">About</a></li>
+				<!--<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>-->
+			   
+			   <li class="nav-item"><a class="nav-link" href="{{ url_for('Project') }}">Portfolio</a></li>
+			   <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="{{ url_for('RecipesSidebar') }}" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+					<ul class="dropdown-menu" aria-labelledby="dropdown05">
+						<li><a class="dropdown-item" href="{{ url_for('CreamyChickenCasserole') }}">Creamy Chicken Casserole</a></li>
+
+						<li><a class="dropdown-item" href="{{ url_for('GuinnessBeefStew') }}">Instant Pot Guinness Beef...</a></li>
+					
+						<li><a class="dropdown-item" href="{{ url_for('EggBites') }}">Bacon and Italian Cheese...</a></li>
+
+						<li><a class="dropdown-item" href="{{ url_for('RecipesSidebar') }}">See all recipes</a></li>
+					</ul>
+			  	</li>
+			   <li class="nav-item"><a class="nav-link" href="{{ url_for('Contact') }}">Contact</a></li>
+			</ul>
+		  </div>
+		</div>
+	</nav>
+
+
+<section class="page-title bg-1 bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+ 
+          <h1 class="text-capitalize mb-5 text-lg">Recipes</h1>
+
+          <ul class="list-inline breadcumb-nav">
+            <li class="list-inline-item"><a href="{{ url_for('Index') }}" class="text-white">Home</a></li>
+            <li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="{{ url_for('RecipesSidebar') }}" class="text-white-50">Recipes</a></li>
+			<li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="{{ url_for('ZucchiniBread') }}" class="text-white-50">Zucchini Bread</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section blog-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row">
+	<div class="col-lg-12 mb-5">
+		<div class="single-blog-item">
+			<img src="{{url_for('static', filename='zucchini-bread-photo.jpg')}}" alt="" class="img-fluid rounded">
+            <figcaption>Photo Credit: House of Nash Eats, <br>https://houseofnasheats.com/best-zucchini-bread-ever/</figcaption>
+       
+
+			<div class="blog-item-content mt-4">
+				<h2 class="mt-3 mb-3 text-md">Zucchini Bread</a></h2>
+				<div class="blog-item-meta mb-5">
+					<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>156 Likes</span>
+					<span class="text-muted text-capitalize mr-3"><i class="ti-comment mr-2"></i>3 Comments</span>
+					<span class="text-black text-capitalize mr-3"><i class="ti-time mr-1"></i> 18th May 2019</span>
+				</div> 
+
+				<p class="lead mb-4">This recipe is a simple, tasty, and easy to bake bread 
+                    that is absolutely delicious.<br>It goes great with a 
+                    jam of choice or butter! Makes about 24 servings (2 loaves).</p>
+
+				<blockquote class="quote">
+					<center>
+					While this recipe is meant to be made in bulk, check out our other recipes for our automatic serving size adjuster!
+					
+					</center>
+				</blockquote>
+
+				<h5 class="blog-item-content mt-4">
+					Ingredients
+				</h5>
+
+				<h6 class="blog-item-content mt-4">
+					
+					<table id="Ingredients" style="text-align:center" border="3">
+						<tr>
+                            <th>3 Cups All-Purpose Flour</th>
+                            <th>3 Eggs</th>
+                    </tr>
+                    <tr>
+                            <th>Salt, 1 tsp</th>
+                            <th>Baking Soda, 1 tsp</th>
+                    </tr>
+                    <tr>
+                            <th>Ground Cinnamon, 1 tbsp</th>
+                            <th>1 Cup Vegetable Oil</th>
+                    </tr>
+                    <tr>
+                            <th>2 1/4 Cups White Sugar</th>
+                            <th>Vanilla Extract, 3 tsp</th>
+                    </tr>
+                    <tr>
+                            <th>2 Cups Grated Zucchini</th>
+                            <th>1 Cup Chopped Walnuts</th>
+                    </tr>
+				
+						</table>
+						
+				</h6>
+
+				<h5 class="blog-item-content mt-4">
+					Kitchen Needs
+				</h5>
+
+				<h6 class="blog-item-content mt-4">
+					<table id= "Kitchen Needs" style="text-align:center" border="3">
+						
+						<tr>
+                            <th>Two 8x4 inch Pans</th>
+                            <th>Oven</th>
+                    </tr>
+                    <tr>
+                            <th>Whisk</th>
+                            <th>Bowl</th>
+                    </tr>
+                    <tr>
+                            <th>Box Grater</th>
+                            <th>Large Knife</th>
+                    </tr>
+                    <tr>
+                            <th>Cutting Board</th>
+                            <th>Food Processor (optional)</th>
+                    </tr>
+						</table>
+					
+				</h6>
+				<br><br>
+				<h5><font color=black>
+					Instructions
+					</h5>
+					<p><hr color="black" width = "100%"></p>
+			    
+	
+                    <p>
+                        1. Grease and flour two 8 x 4 inch pans. Preheat oven to 325 degrees F (165 degrees C). <br><br>
+                        2. Sift flour, salt, baking powder, soda, and cinnamon together in a bowl. <br><br>
+                        3. Beat eggs, oil, vanilla, and sugar together in a large bowl.
+                        Add sifted ingredients to the <br>creamed mixture, and beat well. 
+                        Stir in zucchini and nuts until well combined. <br><br>
+                        4. Pour batter into prepared pans. <br><br>
+                        5. Bake for 40 to 60 minutes, or until tester inserted in the center comes out clean. <br>
+                        Cool in pan on rack for 20 minutes. Remove bread from pan, and completely cool. <br><br>
+                        6. Slice, serve, and enjoy! <br><br>
+                        </p> </font>
+
+			<h3><font color=green>Enjoy!</font></h3>
+				<div class="tag-option mt-5 clearfix">
+				         
+
+				    <ul class="float-right list-inline">
+				        <li class="list-inline-item"> Share: </li>
+				        <li class="list-inline-item"><a target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+				        <li class="list-inline-item"><a target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+				        <li class="list-inline-item"><a  target="_blank"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+				        <li class="list-inline-item"><a  target="_blank"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+				    </ul>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="col-lg-12 mb-5">
+		<div class="posts-nav bg-gray p-5 d-lg-flex d-md-flex justify-content-between ">
+			<div class="posts-prev-item mb-4 mb-lg-0">
+				<span class="nav-posts-desc">- Previous Recipe</span>
+				<h6 class="nav-posts-title mt-1">
+					<a href="{{ url_for('UnstuffedCabbage') }}">Instant Pot Unstuffed Cabbage Soup</a>
+				</h6>
+			</div>
+			<div class="border"></div>
+
+			<div class="posts-next-item pt-4 pt-lg-0">
+				<span class="nav-posts-desc text-lg-right text-md-right d-block">- Next Recipe</span>
+				<h6 class="nav-posts-title mt-1">
+					<a href="{{ url_for('ChickenCacciatore') }}">Chicken Cacciatore</a>
+				</h6>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-12">
+		<div class="comment-area mt-4 mb-5">
+			<h4 class="mb-4">3 Comments</h4>
+			<ul class="comment-tree list-unstyled">
+				<li class="mb-5">
+					<div class="comment-area-box">
+
+						<div class="comment-info">
+							<h5 class="mb-1">Kathleen</h5>
+							<span>New York</span>
+							<span class="date-comm">| Posted April 20, 2019</span>
+						</div>
+						<div class="comment-meta mt-4 mt-lg-0 mt-md-0 float-lg-right float-md-right">
+							<i class="icofont-reply mr-2 text-muted"></i>Reply
+							
+						</div>
+
+						<div class="comment-content mt-3">
+							<p> What a great way to get my kids to eat their veggies! </p>
+						</div>
+					</div>
+				</li>
+                <li class="mb-5">
+					<div class="comment-area-box">
+
+						<div class="comment-info">
+							<h5 class="mb-1">Fred H.</h5>
+							<span>Colorado</span>
+							<span class="date-comm">| Posted September 5, 2020</span>
+						</div>
+						<div class="comment-meta mt-4 mt-lg-0 mt-md-0 float-lg-right float-md-right">
+							<i class="icofont-reply mr-2 text-muted"></i>Reply
+							
+						</div>
+
+						<div class="comment-content mt-3">
+							<p> This was a great grab-and-go breakfast for me. Thanks! </p>
+						</div>
+					</div>
+				</li>
+                <li class="mb-5">
+					<div class="comment-area-box">
+
+						<div class="comment-info">
+							<h5 class="mb-1">Caleb</h5>
+							<span>Mississippi</span>
+							<span class="date-comm">| Posted December 12, 2021</span>
+						</div>
+						<div class="comment-meta mt-4 mt-lg-0 mt-md-0 float-lg-right float-md-right">
+							<i class="icofont-reply mr-2 text-muted"></i>Reply
+							
+						</div>
+
+						<div class="comment-content mt-3">
+							<p> A unique recipe that is good for winter days. I like the cinnamon in it! </p>
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+	<div class="col-lg-12">
+		<form class="comment-form mt-5" id="comment-form">
+			<h4 class="mb-4">Write a comment</h4>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<input class="form-control" type="text" name="name" id="name" placeholder="Name:">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<input class="form-control" type="text" name="mail" id="mail" placeholder="Email:">
+					</div>
+				</div>
+			</div>
+
+
+			<textarea class="form-control mb-4" name="comment" id="comment" cols="30" rows="5" placeholder="Comment"></textarea>
+
+			<input class="btn btn-main" type="button" name="submit-contact" id="submit_contact" onclick=comments()  value="Submit Message">
+		</form>
+	</div>
+</div>
+      </div>
+      <div class="col-lg-4">
+        <div class="sidebar-wrap pl-lg-4 mt-5 mt-lg-0">
+	<div class="sidebar-widget search  mb-3 ">
+		<h5>Search Here</h5>
+		<form action="recipes-sidebar.html" class="search-form">
+			<input type="text" class="form-control" placeholder="search">
+			<i class="ti-search"></i>
+		</form>
+	</div>
+
+
+	<div class="sidebar-widget latest-post mb-3">
+		<h5>Latest Recipes</h5>
+
+        <div class="media py-3">
+            
+            <div class="media-body">
+            	<span class="text-sm text-muted">03 Mar 2021</span>
+                <h6 class="my-2"><a href="{{ url_for('CreamyChickenCasserole') }}">Creamy Chicken Casserole</a></h6>
+            </div>
+        </div>
+
+        <div class="media py-3">
+            
+           <div class="media-body">
+           		<span class="text-sm text-muted">27 Nov 2021</span>
+                <h6 class="my-2"><a href="{{ url_for('GuinnessBeefStew') }}">Guinness Beef Stew</a></h6>
+            </div>
+        </div>
+
+        <div class="media py-3">
+            
+            <div class="media-body">
+            	<span class="text-sm text-muted">12 Feb 2022</span>
+                <h6 class="my-2"><a href="{{ url_for('EggBites') }}">Bacon and Italian Cheese Egg Bites</a></h6>
+            </div>
+        </div>
+        
+	</div>
+
+	<div class="sidebar-widget category mb-3">
+		<h5 class="mb-4">Categories</h5>
+
+		<ul class="list-unstyled">
+		  <li class="align-items-center">
+		    <a >Breakfast</a>
+		    <span>(5)</span>
+		  </li>
+		  <li class="align-items-center">
+		    <a >Meal Prep</a>
+		    <span>(3)</span>
+		  </li>
+		</ul>
+	</div>
+
+
+	<div class="sidebar-widget tags mb-3">
+		<h5 class="mb-4">Keywords</h5>
+
+		<a>Bread</a>
+		<a>Large Batch</a>
+		<a>Easy</a>
+        
+
+	</div>
+
+	
+
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- footer Start -->
+<footer class="footer section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 mr-auto col-sm-6">
+				<div class="widget mb-5 mb-lg-0">
+					<div class="logo mb-4">
+						<h3>Analytics With USF Bulls</h3>
+					</div>
+					<p>We strive to create innovative solutions for the challenges your projects face. From visualizations, to analytics, to web design, we've got you covered!</p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="widget mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-4">Company</h4>
+
+					<ul class="list-unstyled footer-menu lh-35">
+            <li><a href="{{ url_for('Index') }}">Home</a></li>
+						<li><a href="{{ url_for('About') }}">About</a></li>
+						<li><a href="{{ url_for('Project') }}">Portfolio</a></li>
+            <li><a href="{{ url_for('RecipesSidebar') }}">Recipes</a></li>
+						<li><a href="{{ url_for('Contact') }}">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="widget mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-4">Support</h4>
+
+					<ul class="list-unstyled footer-menu lh-35">
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+			</div>-->
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="widget widget-contact mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-4">Get in Touch</h4>
+					<h6><a  style="color: white;"> <i class="ti-headphone-alt mr-3"></i>support@ism6225.com</a></h6>
+					<h6><a  style="color: white;"> <i class="ti-mobile mr-3"></i>123-456-7890</a></h6>
+
+					<ul class="list-inline footer-socials mt-5">
+						<li class="list-inline-item"><a href="https://www.facebook.com/USouthFlorida/"><i class="ti-facebook mr-2"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/USouthFlorida"><i class="ti-twitter mr-2"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/school/usouthflorida/"><i class="ti-linkedin mr-2 "></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-btm py-4 mt-5">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						&copy; Copyright Reserved to <span class="text-color">Orbitor</span> by <a href="https://themefisher.com/" target="_blank">Themefisher</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+   
+
+    <!-- 
+    Essential Scripts - not ours
+    =====================================-->
+
+    
+    <!-- Main jQuery -->
+    <script src="{{url_for('static', filename='jquery.js')}}"></script>
+    <script src="{{url_for('static', filename='contact.js')}}"></script>
+    <!-- Bootstrap 4.3.2 -->
+    <script src="{{url_for('static', filename='popper.js')}}"></script>
+    <script src="{{url_for('static', filename='bootstrap.min.js')}}"></script>
+   <!--  Magnific Popup-->
+    <script src="{{url_for('static', filename='jquery.magnific-popup.min.js')}}"></script>
+    <!-- Slick Slider -->
+    <script src="{{url_for('static', filename='slick.min.js')}}"></script>
+    <!-- Counterup -->
+    <script src="{{url_for('static', filename='jquery.waypoints.min.js')}}"></script>
+    <script src="{{url_for('static', filename='jquery.counterup.min.js')}}"></script>
+
+     <script src="{{url_for('static', filename='modal-video.js')}}"></script>
+    <!-- Google Map -->
+    <script src="{{url_for('static', filename='map.js')}}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
+    
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+
+  </body>
+  </html>

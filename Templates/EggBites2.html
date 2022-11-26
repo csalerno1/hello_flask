@@ -33,7 +33,12 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-  
+  <script>
+	function comments()
+	{
+		alert("Thank you! Your comment has been submitted.");
+	}
+</script>>
 </head>
 
 <body>
@@ -42,7 +47,7 @@
 <div class="bg-dark">
 	<nav class="navbar navbar-expand-lg  py-4 navigation header-padding nav-text-white" id="navbar">
 		<div class="container-fluid bg-dark">
-		  <a class="navbar-brand" href="{{ url_for('static', filename='index.html') }}">
+		  <a class="navbar-brand" href="{{ url_for('Index') }}">
 		  	<img src="{{ url_for('static', filename='usf-horns-logo.png') }}" alt="" class="img-fluid mobile-logo">
 		  </a>
 
@@ -53,25 +58,25 @@
 		  <div class="collapse navbar-collapse text-center" id="navbarsExample09">
 			<ul class="navbar-nav m-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" href="{{ url_for('static', filename='index.html') }}">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="{{ url_for('Index') }}">Home <span class="sr-only">(current)</span></a>
 			  </li>
-			   <li class="nav-item"><a class="nav-link" href="{{ url_for('static', filename='about.html') }}">About</a></li>
+			   <li class="nav-item"><a class="nav-link" href="{{ url_for('About') }}">About</a></li>
 				<!--<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>-->
 			   
-			   <li class="nav-item"><a class="nav-link" href="{{ url_for('static', filename='project.html') }}">Portfolio</a></li>
+			   <li class="nav-item"><a class="nav-link" href="{{ url_for('Project') }}">Portfolio</a></li>
 			   <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="{{ url_for('static', filename='recipes-sidebar.html') }}" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+					<a class="nav-link dropdown-toggle" href="{{ url_for('RecipesSidebar') }}" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
 					<ul class="dropdown-menu" aria-labelledby="dropdown05">
-						<li><a class="dropdown-item" href="CreamyChickenCasserole2.html">Creamy Chicken Casserole</a></li>
+						<li><a class="dropdown-item" href="{{ url_for('CreamyChickenCasserole') }}">Creamy Chicken Casserole</a></li>
 
-						<li><a class="dropdown-item" href="GuinnessBeefStew2.html">Instant Pot Guinness Beef...</a></li>
+						<li><a class="dropdown-item" href="{{ url_for('GuinnessBeefStew') }}">Instant Pot Guinness Beef...</a></li>
 					
-						<li><a class="dropdown-item" href="EggBites2.html">Bacon and Italian Cheese...</a></li>
+						<li><a class="dropdown-item" href="{{ url_for('EggBites') }}">Bacon and Italian Cheese...</a></li>
 
-						<li><a class="dropdown-item" href="{{ url_for('static', filename='recipes-sidebar.html') }}">See all recipes</a></li>
+						<li><a class="dropdown-item" href="{{ url_for('RecipesSidebar') }}">See all recipes</a></li>
 					</ul>
 			  	</li>
-			   <li class="nav-item"><a class="nav-link" href="{{ url_for('static', filename='contact.html') }}">Contact</a></li>
+			   <li class="nav-item"><a class="nav-link" href="{{ url_for('Contact') }}">Contact</a></li>
 			</ul>
 		  </div>
 		</div>
@@ -87,11 +92,11 @@
           <h1 class="text-capitalize mb-5 text-lg">Recipes</h1>
 
           <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="{{ url_for('static', filename='index.html') }}" class="text-white">Home</a></li>
+            <li class="list-inline-item"><a href="{{ url_for('Index') }}" class="text-white">Home</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="{{ url_for('static', filename='recipes-sidebar.html') }}" class="text-white-50">Recipes</a></li>
+            <li class="list-inline-item"><a href="{{ url_for('RecipesSidebar') }}" class="text-white-50">Recipes</a></li>
 			<li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="{{ url_for('static', filename='EggBites2.html') }}" class="text-white-50">Bacon and Italian Cheese Egg Bites</a></li>
+            <li class="list-inline-item"><a href="{{ url_for('EggBites') }}" class="text-white-50">Bacon and Italian Cheese Egg Bites</a></li>
           </ul>
         </div>
       </div>
@@ -101,7 +106,7 @@
 </section>
 
 
-<section class="section blog-wrap bg-gray">
+<section class="section blog-wrap">
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
@@ -219,7 +224,7 @@
 			<div class="posts-prev-item mb-4 mb-lg-0">
 				<span class="nav-posts-desc">- Previous Recipe</span>
 				<h6 class="nav-posts-title mt-1">
-					<a href="{{ url_for('static', filename='DevilsFoodCakeCookies2.html') }}">Devil's Food Cake Cookies</a>
+					<a href="{{ url_for('DevilsFoodCakeCookies') }}">Devil's Food Cake Cookies</a>
 				</h6>
 			</div>
 			<div class="border"></div>
@@ -227,7 +232,7 @@
 			<div class="posts-next-item pt-4 pt-lg-0">
 				<span class="nav-posts-desc text-lg-right text-md-right d-block">- Next Recipe</span>
 				<h6 class="nav-posts-title mt-1">
-					<a href="{{ url_for('static', filename='GuinnessBeefStew2.html') }}">Guinness Beef Stew</a>
+					<a href="{{ url_for('GuinnessBeefStew') }}">Guinness Beef Stew</a>
 				</h6>
 			</div>
 		</div>
@@ -303,7 +308,7 @@
             
             <div class="media-body">
             	<span class="text-sm text-muted">03 Mar 2021</span>
-                <h6 class="my-2"><a href="{{ url_for('static', filename='CreamyChickenCasserole2.html') }}">Creamy Chicken Casserole</a></h6>
+                <h6 class="my-2"><a href="{{ url_for('CreamyChickenCasserole') }}">Creamy Chicken Casserole</a></h6>
             </div>
         </div>
 
@@ -311,7 +316,7 @@
             
            <div class="media-body">
            		<span class="text-sm text-muted">27 Nov 2021</span>
-                <h6 class="my-2"><a href="{{ url_for('static', filename='GuinnessBeefStew2.html') }}">Guinness Beef Stew</a></h6>
+                <h6 class="my-2"><a href="{{ url_for('GuinnessBeefStew') }}">Guinness Beef Stew</a></h6>
             </div>
         </div>
 
@@ -370,11 +375,11 @@
 					<h4 class="text-capitalize mb-4">Company</h4>
 
 					<ul class="list-unstyled footer-menu lh-35">
-            <li><a href="{{ url_for('static', filename='index.html') }}">Home</a></li>
-						<li><a href="{{ url_for('static', filename='about.html') }}">About</a></li>
-						<li><a href="{{ url_for('static', filename='project.html') }}">Portfolio</a></li>
-            <li><a href="{{ url_for('static', filename='recipes-sidebar.html') }}">Recipes</a></li>
-						<li><a href="{{ url_for('static', filename='contact.html') }}">Contact</a></li>
+            <li><a href="{{ url_for('Index') }}">Home</a></li>
+						<li><a href="{{ url_for('About') }}">About</a></li>
+						<li><a href="{{ url_for('Project') }}">Portfolio</a></li>
+            <li><a href="{{ url_for('RecipesSidebar') }}">Recipes</a></li>
+						<li><a href="{{ url_for('Contact') }}">Contact</a></li>
 					</ul>
 				</div>
 			</div>

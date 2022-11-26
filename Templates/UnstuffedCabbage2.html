@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="zxx">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
+  <meta name="author" content="themefisher.com">
+
+  <title>Instant Pot Unstuffed Cabbage Stew - ISM 6225</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Icon Font Css -->
+  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+  <link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="plugins/modal-video/modal-video.css">
+    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <!-- Slick Slider  CSS -->
+  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+	function chooseServingSize()
+	{
+			var people = prompt("Input the number of people you are making this recipe for (1-8 people).", 0);
+			
+			if (people == 0) {
+					alert("You can't make a recipe with 0 servings! Please input a number between 1-8.");
+			}
+
+			else if (people>=1 && people<=8) {
+					var beef = 0.25 * people;
+					var cabbage = 0.25 * people;
+					var tomatoes = 3.5 * people;
+					var sauce = 3.5 * people;
+					var paste = 0.5 * people;
+					var broth = 0.5 * people;
+					var onion = people;
+					var beans = 2 * people;
+
+					var x=document.getElementById('Ingredients').rows[parseInt(0,10)].cells;
+					x[parseInt(0,10)].innerHTML= beef + " Pound(s) Lean Ground Beef";
+					x[parseInt(1,10)].innerHTML= cabbage + " Pound(s) of Cabbage";
+
+					var x=document.getElementById('Ingredients').rows[parseInt(1,10)].cells;
+					x[parseInt(0,10)].innerHTML= tomatoes + "oz Crushed Tomatoes";
+					x[parseInt(1,10)].innerHTML= sauce + "oz Tomato Sauce";
+
+					var x=document.getElementById('Ingredients').rows[parseInt(2,10)].cells;
+					x[parseInt(0,10)].innerHTML= paste + "oz Tomato Paste";
+					x[parseInt(1,10)].innerHTML= broth + " Cup(s) Low Sodium Beef Broth";
+
+					var x=document.getElementById('Ingredients').rows[parseInt(3,10)].cells;
+					x[parseInt(0,10)].innerHTML= onion + "/8 Medium White Onion";
+
+					var x=document.getElementById('Ingredients').rows[parseInt(6,10)].cells;
+					x[parseInt(0,10)].innerHTML= beans + "oz Kidney Beans (Optional)";
+					
+			}
+			
+			else if (people>8) {
+					alert("The instant pot needed for this recipe can't fit ingredients for more than 8 people. Please select a smaller serving size.");
+			}
+
+			else {
+					alert("An error occured. Did you input a number?")
+			}
+	}
+
+</script>
+
+<script>
+	function comments()
+	{
+		alert("Thank you! Your comment has been submitted.");
+	}
+</script>>
+</head>
+
+<body>
+
+<!-- HEADER OF ALL PAGES     -->
+	<nav class="navbar navbar-expand-lg  py-4 navigation header-padding nav-text-white" id="navbar">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="index.html">
+		  	<img src="images/usf-horns-logo.png" alt="" class="img-fluid hidden-logo">
+		  	<img src="images/usf-horns-logo.png" alt="" class="img-fluid mobile-logo">
+		  </a>
+
+		  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="fa fa-bars"></span>
+		  </button>
+	  
+		  <div class="collapse navbar-collapse text-center" id="navbarsExample09">
+			<ul class="navbar-nav m-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			   <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+			   <!--<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>-->
+			   
+			   <li class="nav-item"><a class="nav-link" href="project.html">Portfolio</a></li>
+			   <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="recipes-sidebar.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+				<ul class="dropdown-menu" aria-labelledby="dropdown05">
+					<li><a class="dropdown-item" href="CreamyChickenCasserole2.html">Creamy Chicken Casserole</a></li>
+
+					<li><a class="dropdown-item" href="GuinnessBeefStew2.html">Instant Pot Guinness Beef...</a></li>
+				
+					<li><a class="dropdown-item" href="EggBites2.html">Bacon and Italian Cheese...</a></li>
+
+					<li><a class="dropdown-item" href="recipes-sidebar.html">See all recipes</a></li>
+				</ul>
+			  </li>
+			   <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+			</ul>
+		  </div>
+		</div>
+	</nav>
+
+
+<section class="page-title bg-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+ 
+          <h1 class="text-capitalize mb-5 text-lg">Recipes</h1>
+
+          <ul class="list-inline breadcumb-nav">
+            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="recipes-sidebar.html" class="text-white-50">Recipes</a></li>
+			<li class="list-inline-item"><span class="text-white">/</span></li>
+            <li class="list-inline-item"><a href="UnstuffedCabbage2.html" class="text-white-50">Instant Pot Unstuffed Cabbage Soup</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section blog-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="row">
+	<div class="col-lg-12 mb-5">
+		<div class="single-blog-item">
+			<img src="images/recipes/soup.jpg" alt="" class="img-fluid rounded">
+
+			<div class="blog-item-content mt-4">
+				<h2 class="mt-3 mb-3 text-md">Instant Pot Unstuffed Cabbage Stew</a></h2>
+				<div class="blog-item-meta mb-5">
+					<span class="text-muted text-capitalize mr-3"><i class="ti-pencil-alt mr-2"></i>253 Likes</span>
+					<span class="text-muted text-capitalize mr-3"><i class="ti-comment mr-2"></i>2 Comments</span>
+					<span class="text-black text-capitalize mr-3"><i class="ti-time mr-1"></i> 15th October 2015</span>
+				</div> 
+
+				<p class="lead mb-4">This recipe is a variation of the Polish dish, stuffed cabbage,
+					and is a quick and easy one-pot meal. Goes great
+					with dipping bread. </p>
+
+				<blockquote class="quote">
+					<center>
+					Check out our automatic serving size adjuster! The recipe can cater to however many guests you are serving. Upon loading, the recipe has a serving size of 8 people.
+
+					<form> 
+						<input type="button" class="button1" onclick="chooseServingSize()" value="Click here to choose Serving Size!"> 
+					</form>
+					</center>
+				</blockquote>
+
+				<h5 class="blog-item-content mt-4">
+					Ingredients
+				</h5>
+
+				<h6 class="blog-item-content mt-4">
+					
+					<table id="Ingredients" style="text-align:center" border="3">
+						<tr>
+								<th>2 Pounds Lean Ground Beef</th>
+								<th>1 Whole Medium Sized Cabbage</th>
+						</tr>
+						<tr>
+								<th>28oz Whole Crushed Tomatoes</th>
+								<th>28oz Tomato Sauce</th>
+						</tr>
+						<tr>
+								<th>4oz Tomato Paste</th>
+								<th>4 Cups Low Sodium Beef Broth</th>
+						</tr>
+						<tr>
+								<th>1 Medium Onion</th>
+								<th>Olive Oil, drizzle</th>
+						</tr>
+						<tr>
+								<th>Oregano</th>
+								<th>Basil</th>
+						</tr>
+						<tr>
+								<th>Salt</th>
+								<th>Pepper</th>
+						</tr>
+						<tr>
+								<th>16oz Kidney Beans (optional)</th>
+								<th>Sour Cream (for garnish)</th>
+						</tr>
+				
+				
+				
+						</table>
+						
+				</h6>
+
+				<h5 class="blog-item-content mt-4">
+					Kitchen Needs
+				</h5>
+
+				<h6 class="blog-item-content mt-4">
+					<table id= "Kitchen Needs" style="text-align:center" border="3">
+						
+						<tr>
+								<th>Instant Pot</th>
+								<th>Large Stirring Spoon</th>
+						</tr>
+						<tr>
+								<th>Cutting Board</th>
+								<th>Large Knife</th>
+						</tr>
+						</table>
+					
+				</h6>
+				<br><br>
+				<h5><font color=black>
+					Instructions
+					</h5>
+					<p><hr color="black" width = "100%"></p>
+			    
+	
+			<p>
+			1. Turn the Instant Pot on the saute setting. Add a drizzle of olive oil and let it heat up. <br><br>
+			2. Add the ground beef. Season with salt and pepper to your liking. <br>Cook beef, breaking it up and stirring
+			occasionally, until browned. Turn off the Instant Pot by selecting "Cancel". <br><br>
+			3. Slice the onion and cabbage into bite-size pieces. <br>Add onion to Instant Pot first, then add as much cabbage
+			that will fit in the pot without pushing it down (leave a little room at the top) <br><br>
+			4. Add the crushed tomatoes, tomato sauce, tomato paste, and kidney beans (optional). <br><br>
+			5. Add as much beef broth as it takes to fill the pot to the top. <br><br>
+			6. Add the oregano, basil, and as much salt and pepper as desired. Stir the mixture. <br><br>
+			7. Secure the lid on the Instant Pot. Cook on high pressure for 30 minutes. <br><br>
+			8. Once the soup is done cooking, do an instant pressure release. <br>Add additional seasoning such as 
+			salt and pepper as necessary. <br><br>
+			9. Dish out the soup and add a small spoonful of sour cream as an optional garnish.
+			</p> </font>
+
+			<h3><font color=green>Enjoy!</font></h3>
+				<div class="tag-option mt-5 clearfix">
+				         
+
+				    <ul class="float-right list-inline">
+				        <li class="list-inline-item"> Share: </li>
+				        <li class="list-inline-item"><a  target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+				        <li class="list-inline-item"><a  target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+				        <li class="list-inline-item"><a  target="_blank"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+				        <li class="list-inline-item"><a  target="_blank"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+				    </ul>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="col-lg-12 mb-5">
+		<div class="posts-nav bg-gray p-5 d-lg-flex d-md-flex justify-content-between ">
+			<div class="posts-prev-item mb-4 mb-lg-0">
+				<span class="nav-posts-desc">- Previous Recipe</span>
+				<h6 class="nav-posts-title mt-1">
+					<a href="GuinnessBeefStew2.html">Guinness Beef Stew</a>
+				</h6>
+			</div>
+			<div class="border"></div>
+
+			<div class="posts-next-item pt-4 pt-lg-0">
+				<span class="nav-posts-desc text-lg-right text-md-right d-block">- Next Recipe</span>
+				<h6 class="nav-posts-title mt-1">
+					<a href="ChickenCacciatore2.html">Chicken Cacciatore</a>
+				</h6>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-lg-12">
+		<div class="comment-area mt-4 mb-5">
+			<h4 class="mb-4">2 Comments</h4>
+			<ul class="comment-tree list-unstyled">
+				<li class="mb-5">
+					<div class="comment-area-box">
+						<div class="comment-thumb float-left">
+							
+						</div>
+
+						<div class="comment-info">
+							<h5 class="mb-1">John</h5>
+							<span>Michigan</span>
+							<span class="date-comm">| Posted October 7, 2018</span>
+						</div>
+						<div class="comment-meta mt-4 mt-lg-0 mt-md-0 float-lg-right float-md-right">
+							<a><i class="icofont-reply mr-2 text-muted"></i>Reply</a>
+							
+						</div>
+
+						<div class="comment-content mt-3">
+							<p> Great meal! I made a large batch and it fed my family for a few days. </p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="comment-area-box">
+						<div class="comment-thumb float-left">
+							
+						</div>
+
+						<div class="comment-info">
+							<h5 class="mb-1">Philip W</h5>
+							<span>Florida</span>
+							<span class="date-comm">| Posted July 16, 2020</span>
+						</div>
+
+						<div class="comment-meta mt-4 mt-lg-0 mt-md-0 float-lg-right float-md-right">
+							<a ><i class="icofont-reply mr-2 text-muted"></i>Reply </a>
+							
+						</div>
+
+						<div class="comment-content mt-3">
+							<p> I suggest using leaner ground beef so there's no extra grease in the soup. Thanks for the recipe! </p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="col-lg-12">
+		<form class="comment-form mt-5" id="comment-form">
+			<h4 class="mb-4">Write a comment</h4>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<input class="form-control" type="text" name="name" id="name" placeholder="Name:">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<input class="form-control" type="text" name="mail" id="mail" placeholder="Email:">
+					</div>
+				</div>
+			</div>
+
+
+			<textarea class="form-control mb-4" name="comment" id="comment" cols="30" rows="5" placeholder="Comment"></textarea>
+
+			<input class="btn btn-main" type="button" name="submit-contact" id="submit_contact" onclick=comments()  value="Submit Message">
+		</form>
+	</div>
+</div>
+      </div>
+      <div class="col-lg-4">
+        <div class="sidebar-wrap pl-lg-4 mt-5 mt-lg-0">
+	<div class="sidebar-widget search  mb-3 ">
+		<h5>Search Here</h5>
+		<form action="recipes-sidebar.html" class="search-form">
+			<input type="text" class="form-control" placeholder="search">
+			<i class="ti-search"></i>
+		</form>
+	</div>
+
+
+	<div class="sidebar-widget latest-post mb-3">
+		<h5>Latest Recipes</h5>
+
+        <div class="media py-3">
+            
+            <div class="media-body">
+            	<span class="text-sm text-muted">03 Mar 2021</span>
+                <h6 class="my-2"><a href="CreamyChickenCasserole2.html">Creamy Chicken Casserole</a></h6>
+            </div>
+        </div>
+
+        <div class="media py-3">
+            
+           <div class="media-body">
+           		<span class="text-sm text-muted">27 Nov 2021</span>
+                <h6 class="my-2"><a href="GuinnessBeefStew2.html">Guinness Beef Stew</a></h6>
+            </div>
+        </div>
+
+        <div class="media py-3">
+            
+            <div class="media-body">
+            	<span class="text-sm text-muted">12 Feb 2022</span>
+                <h6 class="my-2"><a href="EggBites2.html">Bacon and Italian Cheese Egg Bites</a></h6>
+            </div>
+        </div>
+	</div>
+
+	<div class="sidebar-widget category mb-3">
+		<h5 class="mb-4">Categories</h5>
+
+		<ul class="list-unstyled">
+		  <li class="align-items-center">
+		    <a >Main Course</a>
+		    <span>(14)</span>
+		  </li>
+		  <li class="align-items-center">
+		    <a >Low Calorie</a>
+		    <span>(2)</span>
+		  </li>
+		  <li class="align-items-center">
+		    <a >Soups</a>
+		    <span>(10)</span>
+		  </li>
+		</ul>
+	</div>
+
+
+	<div class="sidebar-widget tags mb-3">
+		<h5 class="mb-4">Keywords</h5>
+
+		<a>Beef</a>
+		<a>Polish</a>
+		<a>Comfort meal</a>
+		<a>Instant Pot</a>
+		<a>Easy</a>
+	</div>
+
+	
+
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- footer Start -->
+<footer class="footer section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 mr-auto col-sm-6">
+				<div class="widget mb-5 mb-lg-0">
+					<div class="logo mb-4">
+						<h3>Analytics With USF Bulls</h3>
+					</div>
+					<p>We strive to create innovative solutions for the challenges your projects face. From visualizations, to analytics, to web design, we've got you covered!</p>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="widget mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-4">Company</h4>
+
+					<ul class="list-unstyled footer-menu lh-35">
+            <li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="project.html">Portfolio</a></li>
+            <li><a href="recipes-sidebar.html">Recipes</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="widget mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-4">Support</h4>
+
+					<ul class="list-unstyled footer-menu lh-35">
+						<li><a href="#">Terms & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+			</div>-->
+			<div class="col-lg-3 col-md-6 col-sm-6">
+				<div class="widget widget-contact mb-5 mb-lg-0">
+					<h4 class="text-capitalize mb-4">Get in Touch</h4>
+					<h6><a  style="color: white;"> <i class="ti-headphone-alt mr-3"></i>support@ism6225.com</a></h6>
+					<h6><a  style="color: white;"> <i class="ti-mobile mr-3"></i>123-456-7890</a></h6>
+
+					<ul class="list-inline footer-socials mt-5">
+						<li class="list-inline-item"><a href="https://www.facebook.com/USouthFlorida/"><i class="ti-facebook mr-2"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/USouthFlorida"><i class="ti-twitter mr-2"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.linkedin.com/school/usouthflorida/"><i class="ti-linkedin mr-2 "></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-btm py-4 mt-5">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						&copy; Copyright Reserved to <span class="text-color">Orbitor</span> by <a href="https://themefisher.com/" target="_blank">Themefisher</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+   
+
+    <!-- 
+    Essential Scripts - not ours
+    =====================================-->
+
+    
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/jquery.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- Bootstrap 4.3.2 -->
+    <script src="plugins/bootstrap/js/popper.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+   <!--  Magnific Popup-->
+    <script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <!-- Counterup -->
+    <script src="plugins/counterup/jquery.waypoints.min.js"></script>
+    <script src="plugins/counterup/jquery.counterup.min.js"></script>
+
+     <script src="plugins/modal-video/modal-video.js"></script>
+    <!-- Google Map -->
+    <script src="plugins/google-map/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
+    
+    <script src="js/script.js"></script>
+
+  </body>
+  </html>

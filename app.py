@@ -9,7 +9,23 @@ app.static_folder = 'static'
 def home():
     return "Hello, Flask!"
 
-@app.route("/hi")
+@app.route("/EggBites")
+def hello_there(name=None):
+        return render_template(
+        "EggBites2.html",
+        name=name,
+        date=datetime.now()
+    )
+
+@app.route("/ChickenCacciatore")
+def hello_there(name=None):
+        return render_template(
+        "ChickenCacciatore2.html",
+        name=name,
+        date=datetime.now()
+    )
+
+@app.route("/CreamyChickenCasserole")
 def hello_there(name=None):
         return render_template(
         "EggBites2.html",

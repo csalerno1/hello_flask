@@ -16,22 +16,22 @@
   <title>Chicken Cacciatore - USF ISM 6225</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='bull.ico') }}" />
 
   <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
   <!-- Icon Font Css -->
-  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
-  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
-  <link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
-    <link rel="stylesheet" href="plugins/modal-video/modal-video.css">
-    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='themify-icons.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='all.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='modal-video.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='animate.css') }}">
   <!-- Slick Slider  CSS -->
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='slick.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='slick-theme.css') }}">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
   <script>
     function chooseServingSize()
@@ -107,11 +107,11 @@
 <body>
 
 <!-- HEADER OF ALL PAGES     -->
+<div class="bg-dark">
 	<nav class="navbar navbar-expand-lg  py-4 navigation header-padding nav-text-white" id="navbar">
-		<div class="container-fluid">
-		  <a class="navbar-brand" href="index.html">
-		  	<img src="images/usf-horns-logo.png" alt="" class="img-fluid hidden-logo">
-		  	<img src="images/usf-horns-logo.png" alt="" class="img-fluid mobile-logo">
+		<div class="container-fluid bg-dark">
+		  <a class="navbar-brand" href="{{ url_for('static', filename='index.html') }}">
+		  	<img src="{{ url_for('static', filename='usf-horns-logo.png') }}" alt="" class="img-fluid mobile-logo">
 		  </a>
 
 		  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,50 +121,51 @@
 		  <div class="collapse navbar-collapse text-center" id="navbarsExample09">
 			<ul class="navbar-nav m-auto">
 			  <li class="nav-item active">
-				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="{{ url_for('static', filename='index.html') }}">Home <span class="sr-only">(current)</span></a>
 			  </li>
-			   <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-			    <!--<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>-->
+			   <li class="nav-item"><a class="nav-link" href="{{ url_for('static', filename='about.html') }}">About</a></li>
+				<!--<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>-->
 			   
-			   <li class="nav-item"><a class="nav-link" href="project.html">Portfolio</a></li>
+			   <li class="nav-item"><a class="nav-link" href="{{ url_for('static', filename='project.html') }}">Portfolio</a></li>
 			   <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="recipes-sidebar.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
-				<ul class="dropdown-menu" aria-labelledby="dropdown05">
-					<li><a class="dropdown-item" href="CreamyChickenCasserole2.html">Creamy Chicken Casserole</a></li>
+					<a class="nav-link dropdown-toggle" href="{{ url_for('static', filename='recipes-sidebar.html') }}" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+					<ul class="dropdown-menu" aria-labelledby="dropdown05">
+						<li><a class="dropdown-item" href="CreamyChickenCasserole2.html">Creamy Chicken Casserole</a></li>
 
-					<li><a class="dropdown-item" href="GuinnessBeefStew2.html">Instant Pot Guinness Beef...</a></li>
-				
-					<li><a class="dropdown-item" href="EggBites2.html">Bacon and Italian Cheese...</a></li>
+						<li><a class="dropdown-item" href="GuinnessBeefStew2.html">Instant Pot Guinness Beef...</a></li>
+					
+						<li><a class="dropdown-item" href="EggBites2.html">Bacon and Italian Cheese...</a></li>
 
-					<li><a class="dropdown-item" href="recipes-sidebar.html">See all recipes</a></li>
-				</ul>
-			  </li>
-			   <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						<li><a class="dropdown-item" href="{{ url_for('static', filename='recipes-sidebar.html') }}">See all recipes</a></li>
+					</ul>
+			  	</li>
+			   <li class="nav-item"><a class="nav-link" href="{{ url_for('static', filename='contact.html') }}">Contact</a></li>
 			</ul>
 		  </div>
 		</div>
 	</nav>
 
 
-<section class="page-title bg-1">
+<section class="page-title bg-1 bg-gray">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="block text-center">
+        <div class="block text-center bg-dark">
  
           <h1 class="text-capitalize mb-5 text-lg">Recipes</h1>
 
           <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><a href="{{ url_for('static', filename='index.html') }}" class="text-white">Home</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="recipes-sidebar.html" class="text-white-50">Recipes</a></li>
+            <li class="list-inline-item"><a href="{{ url_for('static', filename='recipes-sidebar.html') }}" class="text-white-50">Recipes</a></li>
 			<li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="ChickenCacciatore2.html" class="text-white-50">Chicken Cacciatore</a></li>
+            <li class="list-inline-item"><a href="{{ url_for('static', filename='ChickenCacciatore2.html') }}" class="text-white-50">Chicken Cacciatore</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+</div>
 </section>
 
 <section class="section blog-wrap">

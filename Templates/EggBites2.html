@@ -87,11 +87,11 @@
           <h1 class="text-capitalize mb-5 text-lg">Recipes</h1>
 
           <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+            <li class="list-inline-item"><a href="{{ url_for('static', filename='index.html') }}" class="text-white">Home</a></li>
             <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="recipes-sidebar.html" class="text-white-50">Recipes</a></li>
+            <li class="list-inline-item"><a href="{{ url_for('static', filename='recipes-sidebar.html') }}" class="text-white-50">Recipes</a></li>
 			<li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="EggBites2.html" class="text-white-50">Bacon and Italian Cheese Egg Bites</a></li>
+            <li class="list-inline-item"><a href="{{ url_for('static', filename='EggBites2.html') }}" class="text-white-50">Bacon and Italian Cheese Egg Bites</a></li>
           </ul>
         </div>
       </div>
@@ -219,7 +219,7 @@
 			<div class="posts-prev-item mb-4 mb-lg-0">
 				<span class="nav-posts-desc">- Previous Recipe</span>
 				<h6 class="nav-posts-title mt-1">
-					<a href="DevilsFoodCakeCookies2.html">Devil's Food Cake Cookies</a>
+					<a href="{{ url_for('static', filename='DevilsFoodCakeCookies2.html') }}">Devil's Food Cake Cookies</a>
 				</h6>
 			</div>
 			<div class="border"></div>
@@ -227,7 +227,7 @@
 			<div class="posts-next-item pt-4 pt-lg-0">
 				<span class="nav-posts-desc text-lg-right text-md-right d-block">- Next Recipe</span>
 				<h6 class="nav-posts-title mt-1">
-					<a href="GuinnessBeefStew2.html">Guinness Beef Stew</a>
+					<a href="{{ url_for('static', filename='GuinnessBeefStew2.html') }}">Guinness Beef Stew</a>
 				</h6>
 			</div>
 		</div>
@@ -303,7 +303,7 @@
             
             <div class="media-body">
             	<span class="text-sm text-muted">03 Mar 2021</span>
-                <h6 class="my-2"><a href="CreamyChickenCasserole2.html">Creamy Chicken Casserole</a></h6>
+                <h6 class="my-2"><a href="{{ url_for('static', filename='CreamyChickenCasserole2.html') }}">Creamy Chicken Casserole</a></h6>
             </div>
         </div>
 
@@ -311,7 +311,7 @@
             
            <div class="media-body">
            		<span class="text-sm text-muted">27 Nov 2021</span>
-                <h6 class="my-2"><a href="GuinnessBeefStew2.html">Guinness Beef Stew</a></h6>
+                <h6 class="my-2"><a href="{{ url_for('static', filename='GuinnessBeefStew2.html') }}">Guinness Beef Stew</a></h6>
             </div>
         </div>
 
@@ -370,11 +370,11 @@
 					<h4 class="text-capitalize mb-4">Company</h4>
 
 					<ul class="list-unstyled footer-menu lh-35">
-            <li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="project.html">Portfolio</a></li>
-            <li><a href="recipes-sidebar.html">Recipes</a></li>
-						<li><a href="contact.html">Contact</a></li>
+            <li><a href="{{ url_for('static', filename='index.html') }}">Home</a></li>
+						<li><a href="{{ url_for('static', filename='about.html') }}">About</a></li>
+						<li><a href="{{ url_for('static', filename='project.html') }}">Portfolio</a></li>
+            <li><a href="{{ url_for('static', filename='recipes-sidebar.html') }}">Recipes</a></li>
+						<li><a href="{{ url_for('static', filename='contact.html') }}">Contact</a></li>
 					</ul>
 				</div>
 			</div>

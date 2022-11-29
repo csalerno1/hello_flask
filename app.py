@@ -1,7 +1,6 @@
 from flask import Flask
 import re
 app = Flask(__name__)
-from datetime import datetime
 from flask import render_template
 app.static_folder = 'static'
 
@@ -51,17 +50,9 @@ def GuinnessBeefStew():
     )
 
 @app.route("/")
-def Index(name=None):
+def Index():
         return render_template(
         "index.html"
-    )
-
-@app.route("/<name>")
-def IndexName(name=None):
-        return render_template(
-        "index.html",
-        name=name,
-        date=datetime.now()
     )
 
 @app.route("/ProjectDetails")

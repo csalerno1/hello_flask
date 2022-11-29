@@ -8,6 +8,7 @@
 -->
 
 <html lang="zxx">
+
 <head>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,85 +28,86 @@
   <title>USF Bulls Analytical Solutions</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
 
   <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
   <!-- Icon Font Css -->
-  <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
-  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
-  <link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
-    <link rel="stylesheet" href="plugins/modal-video/modal-video.css">
-    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='themify-icons.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='all.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='modal-video.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/animate-css/animate.css') }}">
   <!-- Slick Slider  CSS -->
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='slick.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='slick-theme.css') }}">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
 
 <body>
-
-
-	<nav class="navbar navbar-expand-lg  py-4 navigation header-padding nav-text-white" id="navbar">
-		<div class="container-fluid">
-		  <a class="navbar-brand" href="index.html">
-		  	<img src="images/usf-horns-logo.png" alt="" class="img-fluid hidden-logo">
-		  	<img src="images/usf-horns-logo.png" alt="" class="img-fluid mobile-logo">
-		  </a>
-
-		  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="fa fa-bars"></span>
-		  </button>
-	  
-		  <div class="collapse navbar-collapse text-center" id="navbarsExample09" style="margin-right: auto;">
-			<ul class="navbar-nav m-auto">
-			  <li class="nav-item active">
-				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-			  </li>
-			   <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-			   <!--<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>-->
-			   
-			   <li class="nav-item"><a class="nav-link" href="project.html">Portfolio</a></li>
-			   <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="recipes-sidebar.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
-				<ul class="dropdown-menu" aria-labelledby="dropdown05">
-					<li><a class="dropdown-item" href="CreamyChickenCasserole2.html">Creamy Chicken Casserole</a></li>
-
-					<li><a class="dropdown-item" href="GuinnessBeefStew2.html">Instant Pot Guinness Beef...</a></li>
-				
-					<li><a class="dropdown-item" href="EggBites2.html">Bacon and Italian Cheese...</a></li>
-
-					<li><a class="dropdown-item" href="recipes-sidebar.html">See all recipes</a></li>
+ 
+	<div class="bg-dark">
+		<nav class="navbar navbar-expand-lg  py-4 navigation header-padding nav-text-white" id="navbar">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="{{ url_for('Index') }}">
+				  <img src="{{ url_for('static', filename='usf-horns-logo.png') }}" alt="" class="img-fluid hidden-logo">
+				  <img src="{{ url_for('static', filename='usf-horns-logo.png') }}" alt="" class="img-fluid mobile-logo">
+			  </a>
+	
+			  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span>
+			  </button>
+		  
+			  <div class="collapse navbar-collapse text-center" id="navbarsExample09">
+				<ul class="navbar-nav m-auto">
+				  <li class="nav-item active">
+					<a class="nav-link" href="{{ url_for('Index') }}">Home <span class="sr-only">(current)</span></a>
+				  </li>
+				   <li class="nav-item"><a class="nav-link" href="{{ url_for('About') }}">About</a></li>
+				   <!--<li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>-->
+				   
+				   <li class="nav-item"><a class="nav-link" href="{{ url_for('Project') }}">Portfolio</a></li>
+				   <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="{{ url_for('RecipesSidebar') }}" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recipes</a>
+					<ul class="dropdown-menu" aria-labelledby="dropdown05">
+						<li><a class="dropdown-item" href="{{ url_for('CreamyChickenCasserole') }}">Creamy Chicken Casserole</a></li>
+	
+						<li><a class="dropdown-item" href="{{ url_for('GuinnessBeefStew') }}">Instant Pot Guinness Beef...</a></li>
+					
+						<li><a class="dropdown-item" href="{{ url_for('EggBites') }}">Bacon and Italian Cheese...</a></li>
+	
+						<li><a class="dropdown-item" href="{{ url_for('RecipesSidebar') }}">See all recipes</a></li>
+					</ul>
+					  </li>
+				   <li class="nav-item"><a class="nav-link" href="{{ url_for('Contact') }}">Contact</a></li>
 				</ul>
-			  	</li>
-			   <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-			</ul>
+			  </div>
+			</div>
+		</nav>
+	
+	
+	<section class="page-title bg-1">
+	  <div class="container">
+		<div class="row">
+		  <div class="col-md-12">
+			<div class="block text-center">
+			  <span class="text-white"></span>
+			  <h1 class="text-capitalize mb-5 text-lg">About Us</h1>
+	
+			  <ul class="list-inline breadcumb-nav">
+				<li class="list-inline-item"><a href="{{ url_for('Index') }}" class="text-white">Home</a></li>
+				<li class="list-inline-item"><span class="text-white">/</span></li>
+				<li class="list-inline-item"><a href="{{ url_for('About') }}" class="text-white-50">About</a></li>
+			  </ul>
+			</div>
 		  </div>
 		</div>
-	</nav>
-
-
-<section class="page-title bg-1">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block text-center">
-          <span class="text-white"></span>
-          <h1 class="text-capitalize mb-5 text-lg">Our Team</h1>
-
-          <ul class="list-inline breadcumb-nav">
-            <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
-            <li class="list-inline-item"><span class="text-white">/</span></li>
-            <li class="list-inline-item"><a href="#" class="text-white-50">About Us</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+	  </div>
+	</div>
+	</section>
 
 
 
@@ -160,10 +162,10 @@
 		<div class="row">
 			<div class="col-lg-3 col-md-6 col-sm-6">
 				<div class="team-block mb-5 mb-lg-0">
-					<img src="images/images-old/Armand Araque image.jpeg" alt="" class="img-fluid w-100">
+					<img src="{{ url_for('static', filename='Armand Araque image.jpeg')}}" alt="" class="img-fluid w-100">
 
 					<h4 class="mt-4 mb-0">Armand Araque</h4>
-					<p>Leader</p>
+					<p>Member</p>
 					 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Read me</button>
 
   <!-- Modal -->
@@ -182,9 +184,7 @@
         completed an internship with the United Soccer League working as a Club Services Intern and is currently working remotely as an Administrative Assistant
         at 21 Media, located in Houston, Texas. Armand has a strong passion for sports and hopes to pursue a career in sports analytics upon graduation. <br><br>
     
-        For this project, Armand contributed by creating and transferring content for the contact page and footer. Armand used Bootstrap to create the pop-up once a contact form is submitted.
-		 He also used Chart.js to create the bar chart on the project recipe page.
-		 The creation of this website was a true team effort, and each member helped each other throughout the project.
+        For this project, Armand contributed by changing the references to different files in the HTML for the contact page and the index/home page. The creation of this website was a true team effort, and each member helped each other throughout the project.
     </p>
         </div>
         <div class="modal-footer">
@@ -200,10 +200,10 @@
 
 			<div class="col-lg-3 col-md-6 col-sm-6">
 				<div class="team-block mb-5 mb-lg-0">
-					<img src="images/images-old/Caitlin Salerno Image.jpg" alt="" class="img-fluid w-100">
+					<img src="{{ url_for('static', filename='CaitlinSalernoImage.jpg')}}" alt="" class="img-fluid w-100">
 
 					<h4 class="mt-4 mb-0">Caitlin Salerno</h4>
-					<p>Assistant leader</p>
+					<p>Member</p>
 					<div class="container">
 					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Read me</button>
 
@@ -225,10 +225,8 @@
             Software Quality Specialist at Bausch and Lomb while in school. In her free time, Caitlin
             enjoys creative or adventurous activities such as woodburning, hiking, painting and hunting. <br><br>
 
-            For this project, Caitlin was the contributor of the recipe template used to create web pages for
-            the recipes seen on this website. She used this template to create the majority of these delicious
-            recipes. She also wrote the JavaScript for the automatic serving size adjuster. Overall, however, every
-			member of the team helped contribute to every page seen on our website.</p>
+            For this project, Caitlin researched and organized the way that the different files would be integrated into the Flask app. 
+			She also added the Flask references into the recipe pages.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -243,10 +241,10 @@
 
 			<div class="col-lg-3 col-md-6 col-sm-6">
 				<div class="team-block mb-5 mb-lg-0">
-					<img src="images/images-old/vitor.jpg" alt="" class="img-fluid w-100">
+					<img src="{{ url_for('static', filename='vitor.jpg')}}" alt="" class="img-fluid w-100">
 
 					<h4 class="mt-4 mb-0">Vitor Crosera</h4>
-					<p>Member</p>
+					<p>Leader</p>
 					<div class="container">
 					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Read me</button>
 
@@ -263,7 +261,7 @@
         <div class="modal-body">
           <p>Vitor Assuncao Crosera was born in Sao Paulo, Brazil. He is finishing his master's degree in Business Analytics and Information Systems.
         His bachelor's degree was also in Business Analytics at University of South Florida and he is working as a Developer for Badcock Furniture and More in Mulberry, FL.
-		  </p><p>For this project, Vitor contributed by formatting and organizing content on the about us page. He also used Bootstrap to create the pop-up for the "Read Me" buttons. This was a team effort, we all helped each other with the whole project.</p>
+		  </p><p>In this project vitor worked on the analytics and about us page.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -276,10 +274,10 @@
 			</div>
 			<div class="col-lg-3 col-md-6 col-sm-6">
 				<div class="team-block">
-					<img src="images/images-old/Shani.jpeg" alt="" class="img-fluid w-100">
+					<img src="{{ url_for('static', filename='Shani.jpeg')}}" alt="" class="img-fluid w-100">
 
 					<h4 class="mt-4 mb-0">Shani Nuyts</h4>
-					<p>Member</p>
+					<p>Assistant Leader</p>
 					<div class="container">
 					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Read me</button>
 
@@ -296,7 +294,7 @@
         <div class="modal-body" >
           <p>
         Shani is a master's student at the Univeristy of South Florida studying Business Analytics and Information Systems. She is currently working as a Data Governance Analyst Intern at CUNA Mutual Group. Shani discovered her love for data while working towards her bachelor's degree in Mathematics.</p>
-    <p> For this project, Shani's main focus was finding a template that could be used for the new website in addition to making and executing an action plan for implementation. She was also in charge of creating the content for the landing page, the portfolio page, and the navigation headers. This project is, first and foremost, a team effort. Every page is created through collaboration.</p>
+    <p> For this project, Shani created a custom presentation theme and created the content for the presentation. She also worked with Armand to create a working Flask navigation for the Index page.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -484,11 +482,11 @@
 					<h4 class="text-capitalize mb-4">Company</h4>
 
 					<ul class="list-unstyled footer-menu lh-35">
-            <li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="project.html">Portfolio</a></li>
-            <li><a href="recipes-sidebar.html">Recipes</a></li>
-						<li><a href="contact.html">Contact</a></li>
+            <li><a href="{{ url_for('Index') }}">Home</a></li>
+						<li><a href="{{ url_for('About') }}">About</a></li>
+						<li><a href="{{ url_for('Project') }}">Portfolio</a></li>
+            <li><a href="{{ url_for('RecipesSidebar') }}">Recipes</a></li>
+						<li><a href="{{ url_for('Contact') }}">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -533,30 +531,30 @@
    
 
     <!-- 
-    Essential Scripts
+    Essential Scripts - not ours
     =====================================-->
 
     
     <!-- Main jQuery -->
-    <script src="plugins/jquery/jquery.js"></script>
-    <script src="js/contact.js"></script>
+    <script src="{{url_for('static', filename='jquery.js')}}"></script>
+    <script src="{{url_for('static', filename='contact.js')}}"></script>
     <!-- Bootstrap 4.3.2 -->
-    <script src="plugins/bootstrap/js/popper.js"></script>
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{url_for('static', filename='popper.js')}}"></script>
+    <script src="{{url_for('static', filename='bootstrap.min.js')}}"></script>
    <!--  Magnific Popup-->
-    <script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="{{url_for('static', filename='jquery.magnific-popup.min.js')}}"></script>
     <!-- Slick Slider -->
-    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="{{url_for('static', filename='slick.min.js')}}"></script>
     <!-- Counterup -->
-    <script src="plugins/counterup/jquery.waypoints.min.js"></script>
-    <script src="plugins/counterup/jquery.counterup.min.js"></script>
+    <script src="{{url_for('static', filename='jquery.waypoints.min.js')}}"></script>
+    <script src="{{url_for('static', filename='jquery.counterup.min.js')}}"></script>
 
-     <script src="plugins/modal-video/modal-video.js"></script>
+     <script src="{{url_for('static', filename='modal-video.js')}}"></script>
     <!-- Google Map -->
-    <script src="plugins/google-map/map.js"></script>
+    <script src="{{url_for('static', filename='map.js')}}"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
     
-    <script src="js/script.js"></script>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
 
   </body>
   </html>
